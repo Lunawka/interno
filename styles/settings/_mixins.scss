@@ -1,0 +1,22 @@
+@mixin flex-all-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex-all-sb {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin text($fz, $fw, $lh) {
+  font-size: $fz;
+  font-weight: $fw;
+  line-height: $lh;
+}
