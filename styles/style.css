@@ -10,26 +10,122 @@
 }
 
 .text {
-  font-size: 14px;
+  font-size: 22px;
+  font-weight: 400;
+  letter-spacing: 0.22px;
 }
+.title {
+  font-size: 25px;
+  font-weight: 400;
+}
+
 .text_bold {
   font-weight: 700;
 }
 .text_medium {
   font-weight: 500;
 }
+.text-btn {
+  font-size: 18px;
+  font-weight: 600;
+}
 
 .first-heading {
+  font-size: 40px;
+  font-weight: 400;
+}
+
+.second-heading {
+  font-size: 62px;
+  font-weight: 400;
+  color: var(--dark-clr);
+}
+
+.third-heading {
   font-size: 50px;
   font-weight: 400;
+  color: var(--dark-clr);
+  letter-spacing: 1px;
 }
 
 body {
   font-family: "DM Serif Display", serif;
-}
+} /*# sourceMappingURL=style.css.map */
 
 .header {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-}/*# sourceMappingURL=style.css.map */
+}
+
+.logo,
+.search {
+  padding: 10px 0;
+}
+
+.banner {
+  position: relative;
+}
+
+.bgimg {
+  width: 100%;
+}
+
+.hero {
+  position: absolute;
+  top: 208px;
+  left: 52px;
+  width: 45%;
+}
+.hero a {
+  border-radius: 18px;
+  padding: 26px 49px 26px 48px;
+  background: var(--dark-clr);
+}
+
+section {
+  padding-bottom: 200px;
+}
+
+.work h5 {
+  padding-bottom: 20px;
+}
+
+.read {
+  padding-top: 52px;
+}
+about-us h5 {
+  padding-bottom: 33px;
+}
+about-us p {
+  padding-bottom: 45px;
+}
+
+.estimate {
+  vertical-align: middle;
+}
+.estimate a {
+  border-radius: 18px;
+  padding: 26px 31px 26px 31px;
+  background: var(--dark-clr);
+}
+
+.logo-client {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.heading h5{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  padding-bottom: 8px;
+}
+
+.heading p{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  padding-bottom: 93px;
+}
