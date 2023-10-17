@@ -12,3 +12,9 @@
 body {
   font-family: "DM Serif Display", serif;
 }
+
+.header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
