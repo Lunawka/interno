@@ -1,7 +1,7 @@
 @mixin flex-all-center {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }
 
 @mixin flex-all-sb {
@@ -15,8 +15,28 @@
   flex-direction: column;
 }
 
-@mixin text($fz, $fw, $lh) {
+@mixin flex-v-center {
+  display: flex;
+  align-items: center;
+}
+
+@mixin flex-h-center {
+  display: flex;
+  justify-content: center;
+}
+
+@mixin text($fz, $clr, $lh: 150%, $fw: 400) {
   font-size: $fz;
-  font-weight: $fw;
+  color: $clr;
   line-height: $lh;
+  font-weight: $fw;
+}
+
+@mixin hover {
+  transition: 0.3s;
+
+  &:hover {
+    transition: 0.3s;
+    @content;
+  }
 }

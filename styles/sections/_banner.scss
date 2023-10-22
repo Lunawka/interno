@@ -1,0 +1,21 @@
+.banner {
+  position: relative;
+}
+
+.bgimg {
+  width: 100%;
+}
+
+.hero {
+  position: absolute;
+  top: 30%;
+  left: 5%;
+  width: 45%;
+}
+
+.btn {
+  border-radius: 18px;
+  padding: 26px 49px 26px 48px;
+  background: var(--dark-clr);
+  color: var(--light-clr);
+}

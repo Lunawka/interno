@@ -1,12 +1,67 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap");
+@import url("libs/bootstrap-reboot.css");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}
+
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 :root {
   --main-clr: #cda274;
   --dark-clr: #292f36;
-  --content-width: 1200px;
+  --gray-clr: #4d5053;
+  --light-clr: #f4f0ec;
   --section-offset: 200px;
-  --first-heading: 65px;
-  --second-heading: 50px;
-  --border-main: 1px solid #e7e7e7;
+  --content-width: 1200px;
+  --content-padding: 15px;
+  --container-width: calc(var(--content-width) + (2 * var(--content-padding)));
+}
+
+body {
+  font-family: "DM Serif Display", serif;
+}
+
+.container {
+  max-width: var(--container-width);
+  padding: 0 var(--content-padding);
+  margin: 0 auto;
+}
+.container_flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+section {
+  margin-top: var(--section-offset);
 }
 
 .text {
@@ -14,17 +69,15 @@
   font-weight: 400;
   letter-spacing: 0.22px;
 }
-.title {
-  font-size: 25px;
-  font-weight: 400;
-}
 
 .text_bold {
   font-weight: 700;
 }
+
 .text_medium {
   font-weight: 500;
 }
+
 .text-btn {
   font-size: 18px;
   font-weight: 600;
@@ -48,19 +101,33 @@
   letter-spacing: 1px;
 }
 
-body {
-  font-family: "DM Serif Display", serif;
-} /*# sourceMappingURL=style.css.map */
-
-.header {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
+.title {
+  font-size: 25px;
+  font-weight: 400;
 }
 
-.logo,
-.search {
-  padding: 10px 0;
+.header {
+  padding: 50px 0;
+}
+.header .nav__list {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 50px;
+       column-gap: 50px;
+}
+.header .nav_item {
+  transition: 0.3s;
+}
+.header .nav_item:hover {
+  transition: 0.3s;
+  color: var(--main-clr);
+}
+.header .nav .search-btn svg path {
+  transition: 0.3s;
+}
+.header .nav .search-btn:hover svg path {
+  transition: 0.3s;
+  stroke: var(--main-clr);
 }
 
 .banner {
@@ -73,18 +140,28 @@ body {
 
 .hero {
   position: absolute;
-  top: 208px;
-  left: 52px;
+  top: 30%;
+  left: 5%;
   width: 45%;
 }
-.hero a {
+
+.btn {
   border-radius: 18px;
   padding: 26px 49px 26px 48px;
   background: var(--dark-clr);
+  color: var(--light-clr);
 }
 
-section {
-  padding-bottom: 200px;
+.title {
+  align-items: center;
+}
+
+.plan {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 42px;
 }
 
 .work h5 {
@@ -94,20 +171,40 @@ section {
 .read {
   padding-top: 52px;
 }
-about-us h5 {
-  padding-bottom: 33px;
+
+.read img {
+  padding-left: 12px;
 }
-about-us p {
-  padding-bottom: 45px;
+
+.about-us {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  align-items: center;
+  gap: 75px;
+}
+
+.about-us h5 {
+  padding-bottom: 25px;
+}
+
+.about-us p {
+  padding-bottom: 30px;
+}
+
+.callus {
+  display: grid;
+  grid-template: 1fr/1fr 3fr;
+  align-items: center;
+  gap: 15px;
 }
 
 .estimate {
   vertical-align: middle;
 }
+
 .estimate a {
-  border-radius: 18px;
   padding: 26px 31px 26px 31px;
-  background: var(--dark-clr);
+  margin-top: 47px;
 }
 
 .logo-client {
@@ -116,16 +213,50 @@ about-us p {
   align-items: center;
 }
 
-.heading h5{
-  display: flex;
+.heading h5 {
   text-align: center;
-  justify-content: center;
   padding-bottom: 8px;
 }
 
-.heading p{
-  display: flex;
+.heading p {
   text-align: center;
-  justify-content: center;
   padding-bottom: 93px;
 }
+
+.kitchens {
+  display: grid;
+  grid-template: 1fr 1fr/1fr 1fr;
+  gap: 56px 104px;
+}
+
+.top-right {
+  border-radius: 0 15% 0 0;
+}
+
+.top-left {
+  border-radius: 15% 0 0 0;
+}
+
+.button-right {
+  border-radius: 0 0 15% 0;
+}
+
+.button-left {
+  border-radius: 0 0 0 15%;
+}
+
+.project-text {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 24px;
+}
+
+.textkitchen {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+
+.textkitchen * {
+  padding: 0;
+  margin: 0;
+}/*# sourceMappingURL=style.css.map */

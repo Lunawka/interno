@@ -1,20 +1,27 @@
-@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
+
+@import url("libs/bootstrap-reboot.css");
+
+@import "settings/reset";
 
 @import "settings/vars";
 @import "settings/mixins";
+@import "settings/settings";
 
-@import "components/button";
 @import "components/text";
 
 @import "sections/header";
-@import "sections/hero";
+@import "sections/banner";
+@import "sections/work";
+@import "sections/aboutus";
+@import "sections/testimonial";
+@import "sections/clientlogo";
+@import "sections/project";
+@import "sections/counter";
+@import "sections/blog";
+@import "sections/contact";
+@import "sections/footer";
 
-body {
-  font-family: "DM Serif Display", serif;
-}
 
-.header {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-}
+
+
