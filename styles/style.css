@@ -259,4 +259,30 @@ section {
 .textkitchen * {
   padding: 0;
   margin: 0;
+}
+
+.bgdark {
+  display: flex;
+  width: 1199px;
+  padding: 80px 315px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 70px;
+  background-color: var(--dark-clr);
+}
+
+.color {
+  color: #fff;
+}
+
+.color-text {
+  color: #fff;
+  padding-bottom: 12px;
+}
+
+.bgcolor {
+  background-color: var(--main-clr);
+  padding: 26px 37px;
 }/*# sourceMappingURL=style.css.map */
