@@ -1,10 +1,7 @@
 .bgdark {
-  display: flex;
-  width: 1199px;
+  @include flex-all-center;
   padding: 80px 315px;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   gap: 10px;
   border-radius: 70px;
   background-color: var(--dark-clr);
