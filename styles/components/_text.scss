@@ -1,6 +1,7 @@
 .text {
   font-size: 22px;
   font-weight: 400;
+  color: var(--gray-clr);
   letter-spacing: 0.22px;
 }
 
@@ -36,6 +37,14 @@
 .title {
   font-size: 25px;
   font-weight: 400;
+}
+
+.text-m{
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 150%;
+  color: var(--gray-clr);
+  letter-spacing: 0.18px;
 }
 
 .text-xxl{
