@@ -69,6 +69,7 @@ section {
   font-weight: 400;
   color: var(--gray-clr);
   letter-spacing: 0.22px;
+  line-height: 150%;
 }
 
 .text_bold {
@@ -357,4 +358,36 @@ section {
 .bgcolor {
   background-color: var(--main-clr);
   padding: 26px 37px;
+}
+
+.footer hr {
+  margin: 0;
+}
+.footer .interno {
+  display: flex;
+  gap: 101px;
+  padding-bottom: 134px;
+}
+.footer .interno .logo {
+  padding-bottom: 18px;
+}
+.footer .social {
+  display: flex;
+  align-items: center;
+  gap: 54px;
+  padding-top: 15px;
+}
+.footer .pages h5,
+.footer .services h5,
+.footer .contact h5 {
+  padding-bottom: 9px;
+}
+.footer .pages a,
+.footer .services a,
+.footer .contact a {
+  line-height: 300%;
+}
+.footer .copyright {
+  text-align: center;
+  padding: 46px;
 }/*# sourceMappingURL=style.css.map */
