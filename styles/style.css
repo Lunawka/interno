@@ -106,6 +106,23 @@ section {
   font-weight: 400;
 }
 
+.text-xxl {
+  color: var(--main-clr);
+  font-size: 85px;
+  text-align: center;
+}
+
+.btn {
+  border-radius: 18px;
+  padding: 26px 49px 26px 48px;
+  background: var(--dark-clr);
+  color: var(--light-clr);
+}
+.btn img {
+  padding-left: 10px;
+  cursor: pointer;
+}
+
 .header {
   padding: 50px 0;
 }
@@ -133,23 +150,14 @@ section {
 .banner {
   position: relative;
 }
-
-.bgimg {
+.banner .bgimg {
   width: 100%;
 }
-
-.hero {
+.banner .hero {
   position: absolute;
   top: 30%;
   left: 5%;
   width: 45%;
-}
-
-.btn {
-  border-radius: 18px;
-  padding: 26px 49px 26px 48px;
-  background: var(--dark-clr);
-  color: var(--light-clr);
 }
 
 .title {
@@ -174,6 +182,7 @@ section {
 
 .read img {
   padding-left: 12px;
+  cursor: pointer;
 }
 
 .about-us {
@@ -191,7 +200,7 @@ section {
   padding-bottom: 30px;
 }
 
-.callus {
+.call-us {
   display: grid;
   grid-template: 1fr/1fr 3fr;
   align-items: center;
@@ -261,6 +270,22 @@ section {
   margin: 0;
 }
 
+.counter {
+  background-color: var(--light-clr);
+  height: 457px;
+  padding: 150px 0;
+}
+.counter .advantage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 16px;
+}
+.counter .advantage:not(:last-child) {
+  padding-right: 64px;
+  border-right: 1px solid var(--main-clr);
+}
+
 .bgdark {
   display: flex;
   align-items: center;
@@ -270,6 +295,10 @@ section {
   gap: 10px;
   border-radius: 70px;
   background-color: var(--dark-clr);
+}
+.bgdark img {
+  padding-left: 11px;
+  color: black;
 }
 
 .color {

@@ -32,7 +32,14 @@
   color: var(--dark-clr);
   letter-spacing: 1px;
 }
+
 .title {
   font-size: 25px;
   font-weight: 400;
+}
+
+.text-xxl{
+  color:var(--main-clr);
+  font-size: 85px;
+  text-align: center;
 }

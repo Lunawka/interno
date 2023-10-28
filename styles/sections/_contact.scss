@@ -5,6 +5,11 @@
   gap: 10px;
   border-radius: 70px;
   background-color: var(--dark-clr);
+
+  & img{
+    padding-left: 11px;
+    color: black;
+  }
 }
 
 .color {

@@ -1,0 +1,11 @@
+.btn {
+  & img {
+    padding-left: 10px;
+    cursor: pointer;
+  }
+
+  border-radius: 18px;
+  padding: 26px 49px 26px 48px;
+  background: var(--dark-clr);
+  color: var(--light-clr);
+}
