@@ -16,7 +16,7 @@
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
       gap: 20px;
-      
+
       .person-name {
         background-color: #fff;
         min-height: 339px;
@@ -24,10 +24,9 @@
         padding: 53px 37px;
 
         .person {
-          display: grid;
+          @include flex-g-center;
           grid-template-columns: 1fr 3fr;
           justify-items: start;
-          align-items: center;
           gap: 23px;
           padding-bottom: 25px;
 

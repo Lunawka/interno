@@ -25,6 +25,11 @@
   justify-content: center;
 }
 
+@mixin flex-g-center {
+  display: grid;
+  align-items: center;
+}
+
 @mixin text($fz, $clr, $lh: 150%, $fw: 400) {
   font-size: $fz;
   color: $clr;

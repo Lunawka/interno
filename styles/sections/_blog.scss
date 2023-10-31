@@ -8,6 +8,7 @@
   .cards{
     display: flex;
     gap: 27px;
+    justify-content: space-between;
 
     .card-bg{
       background-color:var(--light-clr) ;
