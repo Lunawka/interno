@@ -11,18 +11,21 @@
 @import "components/text";
 @import "components/btn";
 
-@import "sections/header";
-@import "sections/banner";
-@import "sections/work";
-@import "sections/aboutus";
-@import "sections/testimonial";
-@import "sections/clientlogo";
-@import "sections/project";
-@import "sections/counter";
-@import "sections/blog";
-@import "sections/contact";
-@import "sections/footer";
+@import "sections/home/header";
+@import "sections/home/banner";
+@import "sections/home/work";
+@import "sections/home/aboutus";
+@import "sections/home/testimonial";
+@import "sections/home/clientlogo";
+@import "sections/home/project";
+@import "sections/home/counter";
+@import "sections/home/blog";
+@import "sections/home/contact";
+@import "sections/home/footer";
 
+@import "sections/about/about-us";
+
+@import "sections/about/footer";
 
 
 
