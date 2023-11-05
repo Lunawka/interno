@@ -1,28 +1,27 @@
-.mail{
+.mail {
   max-width: 796px;
   & input,
-  textarea{
+  textarea {
     width: 100%;
     border: 0;
     border-bottom: 1px solid;
   }
-  
-  & h3{
+
+  & h3 {
     text-align: center;
     padding-bottom: 77px;
   }
 
-  .form{
-    .form-coment{
+  .form {
+    .form-coment {
       display: flex;
       justify-content: space-between;
       gap: 40px;
       padding-bottom: 57px;
     }
 
-    .form-interest{
+    .form-interest {
       min-height: 130px;
-      
     }
 
     .button {
@@ -30,13 +29,5 @@
       justify-content: center;
       padding-top: 77px;
     }
-
   }
-
 }
-
-  
-  
- 
-
-
