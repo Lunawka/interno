@@ -1,0 +1,62 @@
+.team {
+  background-color: var(--light-clr);
+  height: 968px;
+
+  .team-content {
+    padding-top: 185px;
+    border: 185px 360px 184px 360px;
+    padding-bottom: 40px;
+
+    & h3 {
+      text-align: center;
+      color: var(--dark-clr);
+    }
+
+    .team-foto {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 22px;
+
+      & img {
+        background-color: var(--light-clr);
+        border-radius: 30px;
+      }
+    }
+
+    .cardbg {
+      background-color: #fff;
+      border-radius: 30px;
+    }
+
+    .cutaway {
+      height: 100%;
+      background-color: #fff;
+      border-radius: 30px;
+      padding: 70px 27px;
+
+      & span {
+        text-align: center;
+      }
+      & h3 {
+        margin: 0;
+      }
+
+      .social {
+        padding: 65px 0;
+        display: flex;
+        justify-content: center;
+        gap: 36px;
+
+        & img {
+          border-radius: 0;
+        }
+      }
+      .contact-her{
+        justify-content: center;
+        text-align: center;
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+.subconcept {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 150px;
+
+  .concept_block {
+    display: flex;
+    justify-content: center;
+    gap: 41px;
+
+    .concept_content {
+      vertical-align: middle;
+      & h3 {
+        padding-bottom: 23px;
+      }
+
+      & p {
+        padding-bottom: 41px;
+        text-align: justify;
+      }
+    }
+  }
+}

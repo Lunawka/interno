@@ -490,6 +490,81 @@ section {
   padding-top: 34px;
 }
 
+.subconcept {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 150px;
+}
+.subconcept .concept_block {
+  display: flex;
+  justify-content: center;
+  gap: 41px;
+}
+.subconcept .concept_block .concept_content {
+  vertical-align: middle;
+}
+.subconcept .concept_block .concept_content h3 {
+  padding-bottom: 23px;
+}
+.subconcept .concept_block .concept_content p {
+  padding-bottom: 41px;
+  text-align: justify;
+}
+
+.team {
+  background-color: var(--light-clr);
+  height: 968px;
+}
+.team .team-content {
+  padding-top: 185px;
+  border: 185px 360px 184px 360px;
+  padding-bottom: 40px;
+}
+.team .team-content h3 {
+  text-align: center;
+  color: var(--dark-clr);
+}
+.team .team-content .team-foto {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 22px;
+}
+.team .team-content .team-foto img {
+  background-color: var(--light-clr);
+  border-radius: 30px;
+}
+.team .team-content .cardbg {
+  background-color: #fff;
+  border-radius: 30px;
+}
+.team .team-content .cutaway {
+  height: 100%;
+  background-color: #fff;
+  border-radius: 30px;
+  padding: 70px 27px;
+}
+.team .team-content .cutaway span {
+  text-align: center;
+}
+.team .team-content .cutaway h3 {
+  margin: 0;
+}
+.team .team-content .cutaway .social {
+  padding: 65px 0;
+  display: flex;
+  justify-content: center;
+  gap: 36px;
+}
+.team .team-content .cutaway .social img {
+  border-radius: 0;
+}
+.team .team-content .cutaway .contact-her {
+  justify-content: center;
+  text-align: center;
+}
+
 .footer hr {
   margin: 0;
 }
