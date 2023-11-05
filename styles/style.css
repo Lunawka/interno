@@ -565,6 +565,34 @@ section {
   text-align: center;
 }
 
+.mail {
+  max-width: 796px;
+}
+.mail input,
+.mail textarea {
+  width: 100%;
+  border: 0;
+  border-bottom: 1px solid;
+}
+.mail h3 {
+  text-align: center;
+  padding-bottom: 77px;
+}
+.mail .form .form-coment {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  padding-bottom: 57px;
+}
+.mail .form .form-interest {
+  min-height: 130px;
+}
+.mail .form .button {
+  display: flex;
+  justify-content: center;
+  padding-top: 77px;
+}
+
 .footer hr {
   margin: 0;
 }

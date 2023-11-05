@@ -1,0 +1,42 @@
+.mail{
+  max-width: 796px;
+  & input,
+  textarea{
+    width: 100%;
+    border: 0;
+    border-bottom: 1px solid;
+  }
+  
+  & h3{
+    text-align: center;
+    padding-bottom: 77px;
+  }
+
+  .form{
+    .form-coment{
+      display: flex;
+      justify-content: space-between;
+      gap: 40px;
+      padding-bottom: 57px;
+    }
+
+    .form-interest{
+      min-height: 130px;
+      
+    }
+
+    .button {
+      display: flex;
+      justify-content: center;
+      padding-top: 77px;
+    }
+
+  }
+
+}
+
+  
+  
+ 
+
+
