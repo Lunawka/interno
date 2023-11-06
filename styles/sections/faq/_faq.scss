@@ -1,0 +1,16 @@
+.faq-hero {
+  background: url("/icons/faq/bg.jpg") no-repeat;
+  background-size: contain;
+  padding-top: 10%;
+  margin: 0;
+
+  &__header {
+    border-radius: 37px 37px 0px 0px;
+    background-color: #fff;
+    max-width: 503px;
+    margin: 0 auto;
+    padding: 41px;
+    text-align: center;
+  }
+
+}

@@ -593,34 +593,77 @@ section {
   padding-top: 77px;
 }
 
-.footer hr {
+.pricing-hero {
+  background: url("/icons/pricing/bg.jpg") no-repeat;
+  background-size: contain;
+  padding-top: 10%;
   margin: 0;
 }
-.footer .interno {
-  display: flex;
-  gap: 101px;
-  padding-bottom: 134px;
-}
-.footer .interno .logo {
-  padding-bottom: 18px;
-}
-.footer .social {
-  display: flex;
-  align-items: center;
-  gap: 54px;
-  padding-top: 15px;
-}
-.footer .pages h5,
-.footer .services h5,
-.footer .contact h5 {
-  padding-bottom: 9px;
-}
-.footer .pages a,
-.footer .services a,
-.footer .contact a {
-  line-height: 300%;
-}
-.footer .copyright {
+.pricing-hero__header {
+  border-radius: 37px 37px 0px 0px;
+  background-color: #fff;
+  max-width: 503px;
+  margin: 0 auto;
+  padding: 41px;
   text-align: center;
-  padding: 46px;
+}
+
+.project-hero {
+  background: url("/icons/project/bg.jpg") no-repeat;
+  background-size: contain;
+  padding-top: 10%;
+  margin: 0;
+}
+.project-hero__header {
+  border-radius: 37px 37px 0px 0px;
+  background-color: #fff;
+  max-width: 503px;
+  margin: 0 auto;
+  padding: 41px;
+  text-align: center;
+}
+
+.blog-hero {
+  background: url("/icons/blog/bg.jpg") no-repeat;
+  background-size: contain;
+  padding-top: 10%;
+  margin: 0;
+}
+.blog-hero__header {
+  border-radius: 37px 37px 0px 0px;
+  background-color: #fff;
+  max-width: 503px;
+  margin: 0 auto;
+  padding: 41px;
+  text-align: center;
+}
+
+.contact-hero {
+  background: url("/icons/contact/bg.jpg") no-repeat;
+  background-size: contain;
+  padding-top: 10%;
+  margin: 0;
+}
+.contact-hero__header {
+  border-radius: 37px 37px 0px 0px;
+  background-color: #fff;
+  max-width: 503px;
+  margin: 0 auto;
+  padding: 41px;
+  text-align: center;
+}
+
+.faq-hero {
+  background: url("/icons/faq/bg.jpg") no-repeat;
+  background-size: contain;
+  padding-top: 10%;
+  margin: 0;
+}
+.faq-hero__header {
+  border-radius: 37px 37px 0px 0px;
+  background-color: #fff;
+  max-width: 503px;
+  margin: 0 auto;
+  padding: 41px;
+  text-align: center;
 }/*# sourceMappingURL=style.css.map */
