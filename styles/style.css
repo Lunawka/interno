@@ -64,14 +64,6 @@ section {
   margin-top: var(--section-offset);
 }
 
-.text {
-  font-size: 22px;
-  font-weight: 400;
-  color: var(--gray-clr);
-  letter-spacing: 0.22px;
-  line-height: 150%;
-}
-
 .second-heading {
   font-size: 62px;
   font-weight: 400;
@@ -91,6 +83,24 @@ section {
   font-weight: 400;
   color: var(--dark-clr);
   line-height: 150%;
+  letter-spacing: 0.25px;
+}
+
+.text {
+  font-size: 22px;
+  font-weight: 400;
+  color: var(--gray-clr);
+  letter-spacing: 0.22px;
+  line-height: 150%;
+}
+
+.text-md {
+  font-size: 20px;
+  font-weight: 400;
+  color: var(--gray-clr);
+  text-align: center;
+  letter-spacing: 0.2px;
+  line-height: 250%;
 }
 
 .text-m {
