@@ -18,7 +18,9 @@
     }
 
     &:hover a {
-      background-color: var(--light-clr);
+      svg circle {
+        fill: #fff;
+      }
     }
 
     width: 340px;
