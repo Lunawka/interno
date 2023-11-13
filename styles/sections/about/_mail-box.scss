@@ -2,26 +2,30 @@
   max-width: 796px;
   & input,
   textarea {
-    width: 100%;
-    border: 0;
-    border-bottom: 1px solid;
+    
+    border: none;
+    outline: none;
+    border-bottom: 1.5px solid var(--dark-clr);
+    padding: 0 13px 13px 0;
+    flex-grow: 1;
   }
-
   & h3 {
     text-align: center;
-    padding-bottom: 77px;
   }
 
   .form {
-    .form-coment {
-      display: flex;
-      justify-content: space-between;
-      gap: 40px;
-      padding-bottom: 57px;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 80px;
+    &-coment {
+      @include flex-all-sb;
+      gap: 60px 40px;
+      flex-wrap: wrap;
     }
 
-    .form-interest {
-      min-height: 130px;
+    &-interest {
+      resize: none;
+      padding-bottom: 130px;
     }
 
     .button {

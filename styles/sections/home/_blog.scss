@@ -1,56 +1,55 @@
-.blog{
-  .section-header{
+.blog {
+  .section-header {
     text-align: center;
-    & p{
+    & p {
       padding-bottom: 36px;
     }
   }
-  .cards{
+  .cards {
     display: flex;
     gap: 27px;
     justify-content: space-between;
-    }
-    .card{
-      cursor: pointer;
-
-      @include hover {
-        background-color: var(--light-clr);
-      }
-  
-      &:hover a {
-        background-color: var(--light-clr);
-      }
-  
-      width: 340px;
-      padding: 21px;
-      padding-bottom: 37px;
-      border-radius: 62px;
-      border: 1px solid #e7e7e7;
-      box-shadow: 0px 10px 30px 0px rgba(255, 255, 255, 0.25);
-      
-      &_cover{
-        position: relative;
-        border-radius: 45px;
-        & img {
-          border-radius: 45px 45px 0px 0px;
-        }
-
-        h3 {
-          padding-bottom: 30px;
-        }
-      }
-      &_label{
-        position: absolute;
-        bottom: 16px;
-        left: 16px;
-        background-color: var(--light-clr);
-        padding: 4px 11px;
-        min-width: 135px;
-        border-radius: 8px 8px 8px 0px;
-      }
-      &_footer{
-        @include flex-all-sb;
-      }
-    }
-    
   }
+  .card {
+    cursor: pointer;
+
+    @include hover {
+      background-color: var(--light-clr);
+    }
+
+    &:hover a {
+      background-color: var(--light-clr);
+    }
+
+    width: 340px;
+    padding: 21px;
+    padding-bottom: 37px;
+    border-radius: 62px;
+    border: 1px solid #e7e7e7;
+    box-shadow: 0px 10px 30px 0px rgba(255, 255, 255, 0.25);
+
+    &_cover {
+      position: relative;
+      border-radius: 45px;
+      & img {
+        border-radius: 45px 45px 0px 0px;
+      }
+
+      h3 {
+        padding-bottom: 30px;
+      }
+    }
+    &_label {
+      position: absolute;
+      bottom: 16px;
+      left: 16px;
+      background-color: var(--light-clr);
+      padding: 4px 11px;
+      min-width: 135px;
+      border-radius: 8px 8px 8px 0px;
+    }
+    &_footer {
+      @include flex-all-sb;
+    }
+  }
+}
