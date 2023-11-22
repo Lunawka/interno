@@ -1,0 +1,73 @@
+.price {
+  @include flex-all-center;
+  gap: 48px;
+
+  &-design,
+  &-interior,
+  &-furniture {
+    min-height: 725px;
+    min-width: 370px;
+    justify-content: center;
+    padding: 64px 0;
+    background-color: var(--light-clr);
+    border-radius: 33px;
+
+    .price-card {
+      @include flex-all-center;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      padding-bottom: 37px;
+
+      .title {
+        line-height: 150%;
+      }
+
+      h3 {
+        padding-bottom: 30px;
+      }
+
+      p {
+        margin: 0;
+      }
+    }
+
+    .offer {
+      @include flex-all-center;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      padding-top: 28px;
+
+      .btn {
+        justify-content: center;
+        margin-top: 28px;
+      }
+    }
+  }
+
+  &-design {
+    .clr {
+      color: var(--main-clr);
+    }
+    .text-xxl {
+      color: var(--dark-clr);
+    }
+  }
+
+  &-interior {
+    .clr {
+      color: var(--dark-clr);
+    }
+    .text-xxl {
+      color: var(--main-clr);
+    }
+  }
+
+  &-furniture {
+    .text-xxl {
+      color: var(--dark-clr);
+    }
+    .clr {
+      color: var(--main-clr);
+    }
+  }
+}
