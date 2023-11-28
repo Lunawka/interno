@@ -76,3 +76,25 @@
     }
   }
 }
+
+
+
+// 980px
+@include respond(tablet) {
+  
+}
+
+// 748px
+@include respond(medium){
+
+}
+
+// 600px
+@include respond(mobile){
+  
+}
+
+// 425px
+@include respond(mobile-sm){
+  
+}

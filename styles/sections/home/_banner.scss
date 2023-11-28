@@ -11,5 +11,35 @@
     left: 5%;
     width: 45%;
   }
-  
+}
+
+// 980px
+@include respond(tablet) {
+  .banner {
+    .hero {
+      width: 50%;
+      top: 25%;
+    }
+  }
+}
+
+// 748px
+@include respond(medium){
+  .banner {
+    .hero {
+      top: 15%;
+    }
+  }
+}
+
+// 425px
+@include respond(mobile-sm){
+  .banner {
+    .hero {
+      top: 10%;
+      p{
+        margin-bottom: 5px;
+      }
+    }
+  }
 }

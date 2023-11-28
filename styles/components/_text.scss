@@ -1,10 +1,16 @@
-.second-heading {
+.text-xxl {
+  color: var(--main-clr);
+  font-size: 85px;
+  text-align: center;
+}
+
+.first-heading {
   font-size: 62px;
   font-weight: 400;
   color: var(--dark-clr);
 }
 
-.third-heading {
+.second-heading {
   font-size: 50px;
   font-weight: 400;
   color: var(--dark-clr);
@@ -28,7 +34,7 @@
   line-height: 150%;
 }
 
-.text-md{
+.text-md {
   font-size: 20px;
   font-weight: 400;
   color: var(--gray-clr);
@@ -54,8 +60,71 @@
   text-transform: capitalize;
 }
 
-.text-xxl {
-  color: var(--main-clr);
-  font-size: 85px;
-  text-align: center;
+
+// 980px
+@include respond(tablet) {
+  .first-heading {
+    font-size: 52px;
+  }
+  .second-heading{
+    font-size: 44px;
+  }
+
+  .text {
+    font-size: 20px;
+  }
 }
+
+// 748px
+@include respond(medium) {
+  .first-heading {
+    font-size: 44px;
+  }
+
+  .second-heading{
+    font-size: 30px;
+  }
+
+  .text {
+    font-size: 16px;
+  }
+}
+
+// 600px
+@include respond(mobile) {
+  .first-heading {
+    font-size: 26px;
+  }
+
+  .second-heading{
+    font-size: 20px;
+  }
+
+  .title {
+    font-size: 18px;
+  }
+
+  .text {
+    font-size: 12px;
+  }
+}
+
+// 425px
+@include respond(mobile-sm) {
+  .first-heading {
+    font-size: 20px;
+  }
+
+  .second-heading{
+    font-size: 16px;
+  }
+
+  .title {
+    font-size: 14px;
+  }
+
+  .text {
+    font-size: 10px;
+  }
+}
+

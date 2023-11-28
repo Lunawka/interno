@@ -25,3 +25,76 @@
     }
   }
 }
+
+@include respond(tablet) {
+  .header {
+    padding: 40px 0;
+    .nav {
+      &__list {
+        column-gap: 25px;
+      }
+      &__link {
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+@include respond(medium) {
+  .header {
+    padding: 30px 0;
+    .logo img {
+      padding-right: 16px;
+    }
+    .nav {
+      &__list {
+        column-gap: 15px;
+      }
+      &__link {
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+@include respond(mobile) {
+  .header {
+    padding: 20px 0;
+    .logo img {
+      padding-right: 10px;
+      content: url(/icons/favicon.svg);
+    }
+    .nav {
+      &__link {
+        font-size: 12px;
+      }
+      .search-btn svg {
+        width: 16px;
+        height: 16px;
+      }
+    }
+  }
+}
+
+@include respond(mobile-sm) {
+  .header {
+    padding: 10px 0;
+    .logo img {
+      padding-right: 5px;
+      width: 30px;
+    }
+    .nav {
+      &__list {
+        column-gap: 7px;
+      }
+      &__link {
+        font-size: 10px;
+      }
+      .search-btn svg {
+        width: 10px;
+        height: 10px;
+      }
+    }
+  }
+}
+

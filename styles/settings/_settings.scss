@@ -15,3 +15,31 @@ body {
 section {
   margin-top: var(--section-offset);
 }
+
+// 980px
+@include respond(tablet) {
+  section {
+    margin-top: 120px;
+  }
+}
+
+// 748px
+@include respond(medium){
+  section {
+    margin-top: 100px;
+  }
+}
+
+// 600px
+@include respond(mobile){
+  section {
+    margin-top: 60px;
+  }
+}
+
+// 425px
+@include respond(mobile-sm){
+  section {
+    margin-top: 40px;
+  }
+}
