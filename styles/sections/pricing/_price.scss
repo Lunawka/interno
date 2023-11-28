@@ -1,13 +1,15 @@
 .price {
   @include flex-all-center;
-  gap: 48px;
+  flex-wrap: wrap;
+  gap: 45px;
 
   &-design,
   &-interior,
   &-furniture {
     min-height: 725px;
     min-width: 370px;
-    justify-content: center;
+    flex: 1;
+    
     padding: 64px 0;
     background-color: var(--light-clr);
     border-radius: 33px;
@@ -17,6 +19,7 @@
       flex-direction: column;
       flex-wrap: nowrap;
       padding-bottom: 37px;
+      
 
       .title {
         line-height: 150%;

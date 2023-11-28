@@ -1,7 +1,13 @@
 .counter {
   background-color: var(--light-clr);
-  height: 457px;
+  min-height: 457px;
   padding: 150px 0;
+
+  .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 24px;
+  }
 
   .advantage {
     @include flex-column;
@@ -11,6 +17,16 @@
     &:not(:last-child) {
       padding-right: 64px;
       border-right: 1px solid var(--main-clr);
+    }
+  }
+}
+
+@include respond(medium) {
+  .counter {
+    .advantage {
+      &:not(:last-child) {
+        border-right: none;
+      }
     }
   }
 }
