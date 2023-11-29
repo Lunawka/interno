@@ -1,37 +1,111 @@
-.footer{
-  & hr{
+.footer {
+  & hr {
     margin: 0;
   }
-  .interno{
+  .interno {
     display: flex;
     gap: 101px;
     padding-bottom: 134px;
 
-    .logo{
+    .logo {
       padding-bottom: 18px;
     }
   }
-  .social{
+  .social {
     display: flex;
     align-items: center;
     gap: 54px;
     padding-top: 15px;
-
   }
   .pages h5,
   .services h5,
-  .contact h5{
+  .contact h5 {
     padding-bottom: 9px;
   }
 
   .pages a,
   .services a,
-  .contact a{
+  .contact a {
     line-height: 300%;
   }
 
-  .copyright{
+  .copyright {
     text-align: center;
     padding: 46px;
   }
 }
+
+// 980px
+@include respond(tablet) {
+  .footer {
+    .interno {
+      gap: 50px;
+      padding-bottom: 30px;
+
+      .social {
+        gap: 20px;
+      }
+      .pages a,
+      .services a,
+      .contact a {
+        line-height: 200%;
+      }
+    }
+    .copyright {
+      padding: 10px;
+    }
+  }
+}
+
+// 748px
+@include respond(medium) {
+  .footer {
+    .interno {
+      gap: 25px;
+      padding-bottom: 20px;
+      .logo img {
+        content: url(/icons/favicon.svg);
+      }
+      .social {
+        gap: 10px;
+        width: 70%;
+      }
+    }
+  }
+}
+
+// 600px
+@include respond(mobile) {
+  .footer {
+    .interno {
+      gap: 10px;  
+      & p{
+        margin: 0;
+      } 
+      .logo img {
+        width: 70%;
+      }
+      .social {
+        width: 60%;
+        padding-top: 0px;
+      }
+      
+    }
+  }
+}
+
+// 425px
+@include respond(mobile-sm) {
+  .footer {
+    .interno {      
+      gap: 5px;      
+      .logo img {
+        width: 50%;
+      }
+      .social {
+        width: 80%;        
+      }      
+    }
+  }
+}
+

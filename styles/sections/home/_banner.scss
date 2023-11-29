@@ -26,6 +26,9 @@
 // 748px
 @include respond(medium){
   .banner {
+    & h1, p{
+      margin: 0;
+    }
     .hero {
       top: 15%;
     }
@@ -36,6 +39,7 @@
 @include respond(mobile-sm){
   .banner {
     .hero {
+      width: 60%;
       top: 10%;
       p{
         margin-bottom: 5px;

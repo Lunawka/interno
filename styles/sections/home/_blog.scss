@@ -6,12 +6,18 @@
     }
   }
   .cards {
-    display: flex;
+    @include flex-all-sb;
     gap: 27px;
-    justify-content: space-between;
   }
   .card {
     cursor: pointer;
+    min-height: 521px;
+    width: 340px;
+    padding: 21px;
+    padding-bottom: 37px;
+    border-radius: 62px;
+    border: 1px solid #e7e7e7;
+    box-shadow: 0px 10px 30px 0px rgba(255, 255, 255, 0.25);
 
     @include hover {
       background-color: var(--light-clr);
@@ -23,20 +29,12 @@
       }
     }
 
-    width: 340px;
-    padding: 21px;
-    padding-bottom: 37px;
-    border-radius: 62px;
-    border: 1px solid #e7e7e7;
-    box-shadow: 0px 10px 30px 0px rgba(255, 255, 255, 0.25);
-
     &_cover {
       position: relative;
       border-radius: 45px;
       & img {
         border-radius: 45px 45px 0px 0px;
       }
-
       h3 {
         padding-bottom: 30px;
       }
@@ -55,3 +53,84 @@
     }
   }
 }
+
+// 980px
+@include respond(tablet) {
+  .blog {
+    .section-header {
+      & p {
+        padding-bottom: 28px;
+      }
+    }
+    & p,
+    h3 {
+      margin: 0;
+    }
+    & a {
+      svg {
+        width: 40px;
+      }
+    }
+    .card {
+      min-height: 435px;
+      width: 300px;
+      padding: 20px;
+      padding-bottom: 10px;
+      border-radius: 45px;
+      &_footer {
+        padding-top: 20px;
+      }
+      &_cover {
+        & img {
+          border-radius: 30px 30px 0px 0px;
+        }
+      }
+    }
+  }
+}
+
+// 748px
+@include respond(medium) {
+  .blog {
+    .cards {
+      flex-wrap: wrap;
+      justify-content: center;
+      .card {
+        min-height: 400px;
+        &_label {
+          min-width: 100px;
+          bottom: 8px;
+          left: 8px;
+          padding: 4px 8px;
+        }
+      }
+    }
+  }
+}
+
+// 600px
+@include respond(mobile) {
+  .blog {
+    .cards {
+      .card {
+        min-height: 350px;
+        width: 250px;
+        &_label {
+          min-width: 70px;
+        }
+      }
+    }
+  }
+}
+
+// 425px
+@include respond(mobile-sm) {
+  .blog {
+    .cards {
+      .card {
+        min-height: 200px;
+      }
+    }
+  }
+}
+

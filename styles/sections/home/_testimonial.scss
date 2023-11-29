@@ -39,3 +39,90 @@
     }
   }
 }
+
+// 980px
+@include respond(tablet) {
+  .testimonial {
+    & h5,
+    h6,
+    p {
+      margin: 0;
+    }
+    .container {
+      padding: 50px 20px;
+      border-radius: 40px;
+    }
+    .content {
+      & h5 {
+        padding-bottom: 30px;
+      }
+      .testimonials {
+        .person-name {
+          
+          padding: 30px 20px;
+          .person {
+            gap: 15px;
+            padding-bottom: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// 748px
+@include respond(medium) {
+  .testimonial{
+    .container {
+      padding: 25px 15px;
+      border-radius: 40px;
+    }
+    .content {
+      & h5 {
+        padding-bottom: 20px;
+      }
+      .testimonials {
+        .person-name {
+          min-height: 280px;
+          padding: 10px 10px;
+          .person {
+            gap: 10px;
+            padding-bottom: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// 600px
+@include respond(mobile) {
+  .testimonial{
+    .container {      
+      border-radius: 25px;
+    }
+    .content {      
+      .testimonials {
+        @include flex-all-center;
+        flex-wrap: wrap;
+        margin: 0 100px;
+        .person-name {
+          min-height: 0;
+          padding: 20px 20px;          
+        }
+      }
+    }
+  }
+}
+
+// 425px
+@include respond(mobile-sm) {
+  .testimonial{    
+    .content {      
+      .testimonials {        
+        margin: 0 40px;        
+      }
+    }
+  }
+}
+

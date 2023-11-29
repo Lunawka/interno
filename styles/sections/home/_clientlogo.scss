@@ -1,3 +1,26 @@
-.logo-client {
-  @include flex-all-sb;
+.client-logo {
+  .logo-client {
+    @include flex-all-sb;
+  }
 }
+
+// 748px
+@include respond(medium) {
+  .client-logo {
+    .logo-client {
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+  }
+}
+
+// 600px
+@include respond(mobile) {
+  .client-logo {
+    .logo-client {      
+      gap: 20px;
+    }
+  }
+}
+

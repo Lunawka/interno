@@ -6,23 +6,56 @@
   border-radius: 70px;
   background-color: var(--dark-clr);
 
-  & img{
+  & img {
     padding-left: 11px;
     color: black;
   }
+  .s-color {
+    color: #fff;
+  }
+  .text-color {
+    color: #fff;
+    padding-bottom: 12px;
+  }
+
+  .bgcolor {
+    background-color: var(--main-clr);
+    padding: 26px 37px;
+  }
 }
 
-.color {
-  color: #fff;
+// 980px
+@include respond(tablet) {
+  .bgdark {
+    padding: 40px 100px;         
+    border-radius: 40px;
+    .bgcolor {
+      padding: 15px 25px;
+    }    
+  }  
 }
 
-.color-text {
-  color: #fff;
-  padding-bottom: 12px;
+// 600px
+@include respond(mobile) {
+  .bgdark {
+    padding: 40px 70px;         
+    border-radius: 30px;
+    p, h5{
+      margin: 0;
+    }
+    .bgcolor {
+      padding: 15px 25px;
+    }    
+  }  
 }
 
-.bgcolor {
-  background-color: var(--main-clr);
-  padding: 26px 37px;
+// 425px
+@include respond(mobile-sm) {
+  .bgdark {
+    padding: 40px 30px;            
+    border-radius: 20px;   
+    .bgcolor {
+      padding: 8px 10px;
+    }    
+  }  
 }
-

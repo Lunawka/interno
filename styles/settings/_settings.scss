@@ -33,13 +33,13 @@ section {
 // 600px
 @include respond(mobile){
   section {
-    margin-top: 60px;
+    margin-top: 80px;
   }
 }
 
 // 425px
 @include respond(mobile-sm){
   section {
-    margin-top: 40px;
+    margin-top: 60px;
   }
 }

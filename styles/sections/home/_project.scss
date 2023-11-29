@@ -1,55 +1,140 @@
-.heading h5 {
-  text-align: center;
-  padding-bottom: 8px;
-}
+.project {
+  .heading {
+    & h5 {
+      text-align: center;
+      padding-bottom: 8px;
+    }
 
-.heading p {
-  text-align: center;
-  padding-bottom: 93px;
-}
-
-.kitchens {
-  display: grid;
-  grid-template: 1fr 1fr / 1fr 1fr;
-  gap: 56px 104px;
-
-}
-
-.top-right{
-  border-radius: 0 15% 0 0;
-}
-
-.top-left{
-  border-radius: 15% 0 0 0;
-}
-
-.button-right{
-  border-radius: 0 0 15% 0;
-}
-
-.button-left{
-  border-radius: 0 0 0 15%;
-}
-
-.project-text {
-  display: flex;
-  justify-content: space-between;
-  padding-top: 24px;
-}
-
-.textkitchen{
-  display: grid;
-  grid-template-rows: 1fr 1fr;
- 
-}
-
-.textkitchen *{
-  padding: 0;
-  margin: 0;
-}
-
-button:hover  {
-  svg circle {
-    fill: var(--main-clr);
+    & p {
+      padding: 0 200px;
+      text-align: center;
+      padding-bottom: 93px;
     }
   }
+
+  .kitchens {
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 1fr;
+    gap: 56px 104px;
+  }
+
+  .top-right {
+    border-radius: 0 15% 0 0;
+  }
+
+  .top-left {
+    border-radius: 15% 0 0 0;
+  }
+
+  .button-right {
+    border-radius: 0 0 15% 0;
+  }
+
+  .button-left {
+    border-radius: 0 0 0 15%;
+  }
+
+  .project-text {
+    @include flex-all-sb;
+    padding-top: 24px;
+  }
+
+  .textkitchen {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .textkitchen * {
+    padding: 0;
+    margin: 0;
+  }
+
+  button:hover {
+    svg circle {
+      fill: var(--main-clr);
+    }
+  }
+}
+// 980px
+@include respond(tablet) {
+  .project {
+    .heading {
+      & p {
+        padding: 0 80px;
+        padding-bottom: 40px;
+        margin: 0;
+      }
+    }
+    .kitchens {
+      gap: 30px 50px;
+    }
+  }
+}
+
+// 748px
+@include respond(medium) {
+  .project {
+    .kitchens {
+      gap: 30px 30px;
+      & button {
+        svg {
+          width: 50px;
+        }
+      }
+    }
+  }
+}
+
+// 600px
+@include respond(mobile) {
+  .project {
+    .heading {
+      & p {
+        padding: 0 70px;
+        padding-bottom: 30px;
+      }
+    }
+    .kitchens {
+      @include flex-all-sb;
+      flex-wrap: wrap;
+      margin: 0 60px;
+      gap: 60px 20px;
+      & button {
+        svg {
+          width: 40px;
+        }
+      }
+      .project-text {
+        padding-top: 20px;
+      }
+    }
+  }
+}
+
+// 425px
+@include respond(mobile-sm) {
+  .project {
+    .heading {
+      & h5 {
+        margin: 0;
+      }
+      & p {
+        padding: 0 30px;
+        padding-bottom: 20px;
+      }
+    }
+    .kitchens {
+      margin: 0 20px;
+      gap: 10px 15px;
+      & button {
+        svg {
+          width: 35px;
+        }
+      }
+      .project-text {
+        padding-top: 10px;
+      }
+    }
+  }
+}
+
